@@ -1,9 +1,9 @@
-import About from "./components/about";
+import Users from "@/app/components/admin/user/Users";
 
 export default function Page() {
   return (
     <div>
-      <About />
+      <Users />
     </div>
   );
 }
