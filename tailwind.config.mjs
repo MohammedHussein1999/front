@@ -7,7 +7,7 @@ module.exports = {
 		"./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
 		"./src/components/**/*.{js,ts,jsx,tsx,mdx}",
 	],
-	important: true,
+	// important: true,
 	theme: {
 		extend: {
 			colors: {
@@ -79,5 +79,5 @@ module.exports = {
 			}
 		}
 	},
-	plugins: [require("tailwindcss-animate")],
+	plugins: [ require("tailwindcss-animate")],
 };

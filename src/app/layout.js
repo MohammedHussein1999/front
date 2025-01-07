@@ -1,6 +1,8 @@
 
 import NavBar from './components/nav/NavBar';
 import './globals.css'
+import "@radix-ui/themes/styles.css";
+
 export default function RootLayout({ children }) {
 
   return (

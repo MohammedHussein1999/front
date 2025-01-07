@@ -14,21 +14,27 @@ export default function LogIn() {
     const [password, setPassword] = useState();
     async function log(e) {
         e.preventDefault();
-      
+
+        console.log(phone, password);
 
         try {
-            const response = await axios.post("http://127.0.0.1:8000/api/login", {
+            const response = await axios.post("http://localhost:8000/api/login", {
                 name: phone,
                 password: password
             })
-          
+
             Cookies.set('token', JSON.stringify(response.data.token))
             Cookies.set('user', JSON.stringify(response.data.user))
-            if (response) {
+           
+
+            if (!response.ok) {
 
 
-                window.location.href = '/home'
+                window.location.href = '/auth/login'
             }
+
+            window.location.href = '/home'
+
         } catch (error) {
             console.log(error);
 
