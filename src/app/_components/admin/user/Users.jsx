@@ -24,7 +24,7 @@ export default function Users() {
 
     const fetchData = async () => {
         try {
-            const res = await axios.get('http://mohammed199911.byethost22.com/?i=1/api/users', {
+            const res = await axios.get('http://mohammed199911.byethost22.com/api/users', {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },

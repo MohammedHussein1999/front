@@ -24,7 +24,7 @@ export default function FormClass() {
      
 
         try {
-            let res = await axios.post("http://mohammed199911.byethost22.com/?i=1/api/admin/class/create",
+            let res = await axios.post("http://mohammed199911.byethost22.com/api/admin/class/create",
                 {
 
                     className: name,

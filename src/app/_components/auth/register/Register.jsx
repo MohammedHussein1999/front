@@ -19,7 +19,7 @@ export default function Register() {
     async function send(e) {
         e.preventDefault();
         try {
-            let res = await axios.post("http://mohammed199911.byethost22.com/?i=1/api/create",
+            let res = await axios.post("http://mohammed199911.byethost22.com/api/create",
                 {
 
                     name: name,

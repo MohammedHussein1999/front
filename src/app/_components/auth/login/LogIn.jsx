@@ -18,7 +18,7 @@ export default function LogIn() {
         console.log(phone, password);
 
         try {
-            const response = await axios.post("http://localhost:8000/api/login", {
+            const response = await axios.post("http://mohammed199911.byethost22.com/api/login", {
                 name: phone,
                 password: password
             })

@@ -26,7 +26,7 @@ export default function Offers() {
 
     try {
 
-      let test = await fetch("http://mohammed199911.byethost22.com/?i=1/api/admin/class/index", {
+      let test = await fetch("http://mohammed199911.byethost22.com/api/admin/class/index", {
         headers: {
           Authorization: `Bearer ${token}`,
         },
