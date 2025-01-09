@@ -18,10 +18,9 @@ export default function Product() {
   const [error, setError] = useState(null); // للتعامل مع الأخطاء
 
   // قراءة التوكن من الكوكيز
-  const token = JSON.parse(Cookies.get('token'));
+  const token = Cookies.get('token') ? JSON.parse(Cookies.get('token')) : null;
 
   
- 
   const fetchData = async () => {
     try {
       const res = await axios.get('http://127.0.0.1:8000/api/admin/product/index', {

@@ -1,4 +1,4 @@
-import Product from "@/app/components/admin/product/Product";
+import Product from "@/app/_components/admin/product/Product";
 
 export default function Page() {
   return (

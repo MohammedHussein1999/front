@@ -1,6 +1,6 @@
 'use client';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import FormClass from './formClass';
+
 
 import Cookies from 'js-cookie';
 import { useEffect, useState } from 'react';
@@ -15,44 +15,43 @@ export default function Offers() {
   const [error, setError] = useState(null); // للتعامل مع الأخطاء
 
   // قراءة التوكن من الكوكيز
-  const token = JSON.parse(Cookies.get('token'));
+
+
+
+  const token = Cookies.get('token') ? JSON.parse(Cookies.get('token')) : null;
+
   console.log(token)
 
-
-
-
   const fetchData = async () => {
-    // let tt = await classes();
-    // console.log("api class",tt)
 
-    try{
+    try {
 
       let test = await fetch("http://127.0.0.1:8000/api/admin/class/index", {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    });
-    let data = await test.json();
-    console.log(data)
-    
-    console.log('done');
-    setTest(data)
-    setLoading(false); // إنهاء حالة التحميل
-    
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+      let data = await test.json();
+      console.log(data)
+
+      console.log('done');
+      setTest(data)
+      setLoading(false); // إنهاء حالة التحميل
+
     } catch {
       console.log('error');
-      
-    setError("لا يوجد بينات")
-    setLoading(false); // إنهاء حالة التحميل
-  }
-    
+
+      setError("لا يوجد بينات")
+      setLoading(false); // إنهاء حالة التحميل
+    }
+
 
   };
   useEffect(() => {
 
     fetchData();
 
-  }, [FormClass]);
+  }, []);
 
 
 
@@ -76,7 +75,7 @@ export default function Offers() {
         Authorization: `Bearer ${token}`
       }
     })
-   
+
 
 
     if (del.ok) {

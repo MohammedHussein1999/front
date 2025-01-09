@@ -1,5 +1,5 @@
 
-import LogIn from "@/app/components/auth/login/LogIn";
+import LogIn from "@/app/_components/auth/login/LogIn";
 
 
 

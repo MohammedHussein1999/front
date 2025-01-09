@@ -12,10 +12,10 @@ export default function AdminButton() {
         <DrawerHeader className=''>
           <div className=' w-full text-white  flex flex-col text-right text-xl font-bold '>
             <Link href="" className="delay-150 p-3 hover:bg-zinc-700 rounded-md hover:text-min   " >العروض</Link>
-            <Link href="/home/admin/product" className="delay-150 p-3 hover:bg-zinc-700 rounded-md hover:text-min   " >المنتجات</Link>
-            <Link href="/home/admin/users" className="delay-150 p-3 hover:bg-zinc-700 rounded-md hover:text-min   " >المستخدمين</Link>
-            <Link href="/home/admin/offers" className="delay-150 p-3 hover:bg-zinc-700 rounded-md hover:text-min   " >السيشن</Link>
-           
+            <Link href="/home/admin/productAdmin" className="delay-150 p-3 hover:bg-zinc-700 rounded-md hover:text-min   " >المنتجات</Link>
+            <Link href="/home/admin/usersAdmin" className="delay-150 p-3 hover:bg-zinc-700 rounded-md hover:text-min   " >المستخدمين</Link>
+            <Link href="/home/admin/offersAdmin" className="delay-150 p-3 hover:bg-zinc-700 rounded-md hover:text-min   " >السيشن</Link>
+
           </div>
         </DrawerHeader>
         <DrawerFooter>

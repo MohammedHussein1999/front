@@ -18,7 +18,7 @@ export default function Users() {
     const [error, setError] = useState(null); // للتعامل مع الأخطاء
 
     // قراءة التوكن من الكوكيز
-    const token = JSON.parse(Cookies.get('token'));
+     const token = Cookies.get('token') ? JSON.parse(Cookies.get('token')) : null;
 
 
 

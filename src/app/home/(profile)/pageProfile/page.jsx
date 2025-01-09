@@ -1,11 +1,11 @@
-import Profile from "@/app/components/profile/Profile";
+import Profile from "@/app/_components/profile/Profile";
 
 
 
 export default function page() {
   return (
     <div>
-      <Profile/>
+      <Profile />
     </div>
   )
 }

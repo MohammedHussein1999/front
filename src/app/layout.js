@@ -1,5 +1,5 @@
 
-import NavBar from './components/nav/NavBar';
+import NavBar from './_components/nav/NavBar';
 import './globals.css'
 import "@radix-ui/themes/styles.css";
 

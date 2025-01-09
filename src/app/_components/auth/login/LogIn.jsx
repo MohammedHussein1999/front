@@ -25,7 +25,7 @@ export default function LogIn() {
 
             Cookies.set('token', JSON.stringify(response.data.token))
             Cookies.set('user', JSON.stringify(response.data.user))
-           
+
 
             if (!response.ok) {
 

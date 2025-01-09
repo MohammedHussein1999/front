@@ -1,4 +1,4 @@
-import Register from "@/app/components/auth/register/Register";
+import Register from "@/app/_components/auth/register/Register";
 
 
 

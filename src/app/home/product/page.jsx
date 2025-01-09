@@ -748,14 +748,14 @@ export default function Page() {
 
 
         </div>
-    <div className="w-full flex justify-center">
+        <div className="w-full flex justify-center">
 
-        <TabsList className="w-min text-center">
-          <TabsTrigger  value="1">1</TabsTrigger>
-          <TabsTrigger value="2">2</TabsTrigger>
-          <TabsTrigger value="3">3</TabsTrigger>
-        </TabsList>
-    </div>
+          <TabsList className="w-min text-center">
+            <TabsTrigger value="1">1</TabsTrigger>
+            <TabsTrigger value="2">2</TabsTrigger>
+            <TabsTrigger value="3">3</TabsTrigger>
+          </TabsList>
+        </div>
       </Tabs>
     </>
   );

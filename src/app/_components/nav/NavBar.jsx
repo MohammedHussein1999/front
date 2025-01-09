@@ -36,17 +36,17 @@ export default function NavBar() {
   }
 
   return (
-    <div className="flex flex-row border-b border-seconder">
+    <div className="flex flex-row border-b w-full  border-seconder">
       <NavigationMenu className="p-8 !max-w-none bg-seconder items-center h-20 flex gap-10 justify-end text-white">
         <NavigationMenuList>
           <TooltipProvider>
             <Tooltip>
               <NavigationMenuLink href='/home/sell'>
 
-              <TooltipTrigger className='relative mx-3 cursor-pointer text-3xl'>
-                <span className=' rounded-full bg-red-600 text-white p-1 text-xs absolute'>3</span>
-                <MdOutlineShoppingCart />
-              </TooltipTrigger>
+                <TooltipTrigger className='relative mx-3 cursor-pointer text-3xl'>
+                  <span className=' rounded-full bg-red-600 text-white p-1 text-xs absolute'>3</span>
+                  <MdOutlineShoppingCart />
+                </TooltipTrigger>
               </NavigationMenuLink>
               <TooltipContent className=" mt-5 border-b  scrollbar-hidden shadow-md border-black  max-h-96">
                 <ScrollArea align='end' className="w-60  p-1 h-[400px] flex gap-5   scrollbar scrollbar-thumb-gray-500 scrollbar-track-gray-200 scrollbar-thin">
@@ -66,7 +66,7 @@ export default function NavBar() {
                     </Card>
 
                   </div>
-              
+
                   <div className="my-2">
                     <Card>
                       <CardHeader>
@@ -82,7 +82,7 @@ export default function NavBar() {
                     </Card>
 
                   </div>
-              
+
                   <div className="my-2">
                     <Card>
                       <CardHeader>
@@ -98,7 +98,7 @@ export default function NavBar() {
                     </Card>
 
                   </div>
-              
+
                 </ScrollArea>
               </TooltipContent>
             </Tooltip>

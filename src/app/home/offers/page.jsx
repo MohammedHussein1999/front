@@ -1,18 +1,12 @@
-
-
-import Offers from "@/app/components/offers/offers";
-
+import Offers from "@/app/_components/offers/offers";
 
 
 
 export default function Page() {
 
-
-
   return (
-      <div>
-        
+    <div>
       <Offers />
-     </div>
+    </div>
   );
 }
