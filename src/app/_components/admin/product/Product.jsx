@@ -23,7 +23,7 @@ export default function Product() {
   
   const fetchData = async () => {
     try {
-      const res = await axios.get('http://127.0.0.1:8000/api/admin/product/index', {
+      const res = await axios.get('http://mohammed199911.byethost22.com/?i=1/api/admin/product/index', {
         headers: {
           Authorization: `Bearer ${token}`,
         },
